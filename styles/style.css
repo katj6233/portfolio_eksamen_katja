@@ -1,0 +1,715 @@
+/********* GENERELT **********/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  --primary: #f2f2f2;
+  --secondary: #fff;
+  --accent: #fdaf7a;
+  --heading: #000;
+
+  --h1Text: "Mukta", sans-serif;
+  --h2Text: "Mukta", sans-serif;
+  --h3Text: "Mukta", sans-serif;
+  --h4Text: "Mukta", sans-serif;
+  --h5Text: "Mukta", sans-serif;
+  --paragraph: "Lato", sans-serif;
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.8rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
+
+  background-color: var(--primary);
+}
+
+/* header {
+    padding-top: 1rem;
+  } */
+
+/********** MENU  ************/
+
+.links {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: var(--heading);
+  padding-inline: 0;
+  padding-block: 1rem;
+  justify-content: space-evenly;
+  color: var(--heading);
+}
+
+.links a {
+  color: var(--heading);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: var(--paragraph);
+}
+
+h1 a {
+  font-size: 1.5rem;
+  font-family: var(--h1Text);
+  text-decoration: none;
+  color: var(--heading);
+}
+
+/********** FOOTER  ************/
+
+.footer_info {
+  padding-block: 1rem;
+}
+
+.footer_info p {
+  padding-inline: 2rem;
+  padding-block: 0rem;
+}
+
+/************ LINKS **************/
+
+.cv_link,
+.projekter_link,
+.om_mig_link,
+.kontakt_link,
+.web_projekt,
+.ux_projekt,
+.animation_projekt,
+.indhold_projekt,
+.indhold_pilot,
+.undersider_link {
+  text-align: center;
+  list-style: none;
+}
+
+.cv_link a,
+.projekter_link a,
+.om_mig_link a,
+.kontakt_link a,
+.web_projekt a,
+.ux_projekt a,
+.animation_projekt a,
+.indhold_projekt a,
+.indhold_pilot a,
+.undersider_link a {
+  font-family: var(--paragraph);
+  text-decoration: none;
+  background-color: var(--accent);
+  border-radius: 6px 20px 6px 6px;
+  color: var(--secondary);
+  padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.links_forside {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projekter_link,
+.om_mig_link,
+.kontakt_link {
+  margin-block: 4rem;
+  padding-inline: 0.2rem;
+}
+
+.undersider_link {
+  padding-block: 2rem 3rem;
+  padding-left: 0rem;
+}
+
+/************* KONTAKTFORMULAR **************/
+
+.kontakt_formular {
+  background-color: var(--secondary);
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+  border-inline: 0.3rem solid var(--accent);
+  border-block: 0.3rem solid var(--accent);
+}
+
+form label {
+  font-family: var(--paragraph);
+  font-size: 0.8rem;
+  color: var(--heading);
+  margin-block: 0.5rem;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+
+.form_felt {
+  display: grid;
+}
+
+form {
+  /* grid-column: 2/3; */
+  padding: 2rem;
+}
+
+button {
+  margin-top: 1rem;
+  border: 0;
+  background: var(--accent);
+  padding: 0.75rem;
+  border-radius: 6px 20px 6px 6px;
+  color: #fff;
+  text-decoration: none;
+  margin-block: 2rem 1rem;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/************ FONTE **************/
+
+h1 {
+  font-family: var(--h1Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: 1.7rem;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-family: var(--h2Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-family: var(--h3Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-family: var(--h4Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: 1rem;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+}
+
+h5 {
+  font-family: var(--h5Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+p {
+  font-family: var(--paragraph);
+  color: var(--heading);
+  text-align: left;
+  padding-inline: 2rem;
+  padding-block: 2rem 2rem;
+  line-height: 2;
+  font-size: var(--space-xs);
+}
+
+/************* FORSIDE *************/
+
+.hero {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr auto auto 1fr;
+  /* margin-inline: 2rem; */
+}
+
+.hero h1 {
+  grid-area: 2/1;
+  text-align: center;
+  color: var(--secondary);
+  font-size: 1.7rem;
+  letter-spacing: 1rem;
+}
+
+.hero video {
+  grid-area: 1/1;
+  grid-row: 1/5;
+}
+
+/* .forside_splash {
+    display: grid;
+  }
+  
+  .forside_splash h1 {
+    grid-area: 1/1;
+  } */
+
+.forside_grid {
+  background-color: var(--secondary);
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+  border-inline: 0.3rem solid var(--accent);
+  border-block: 0.3rem solid var(--accent);
+}
+
+.forside_grid h2 {
+  margin-top: 2rem;
+}
+
+.forside_grid img {
+  padding-inline: 2rem;
+  margin-bottom: 2rem;
+}
+
+/************* PROJEKTER *************/
+
+.section_wrapper a {
+  font-family: var(--h3Text);
+  color: var(--heading);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.section_wrapper div {
+  padding-block: 1.5rem;
+  text-align: center;
+}
+
+.section_wrapper img {
+  padding-inline: 2rem;
+}
+
+.projekter_border {
+  background-color: var(--secondary);
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+  border-inline: 0.3rem solid var(--accent);
+  border-block: 0.3rem solid var(--accent);
+}
+
+/************* OM MIG ****************/
+
+.om_mig_info {
+  padding-block: 2rem 2rem;
+}
+
+.om_mig_info h4 {
+  padding-bottom: 0;
+}
+
+.om_mig_info div {
+  padding-bottom: 1.5rem;
+}
+
+.om_mig_info p {
+  text-align: center;
+  padding-block: 0;
+}
+
+.hvem_er_jeg p {
+  padding-bottom: 3.5rem;
+}
+
+.lille_info {
+  padding-top: 2rem;
+}
+
+.section_wrapper1,
+.section_wrapper2 {
+  background-color: var(--secondary);
+  margin-inline: 2rem;
+  border-inline: 0.3rem solid var(--accent);
+  border-block: 0.3rem solid var(--accent);
+  margin-bottom: 2rem;
+}
+
+.section_wrapper1 h3,
+.section_wrapper2 h3 {
+  padding-block: 2rem;
+}
+
+.section_wrapper1 p,
+.section_wrapper2 p {
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+/************* KONTAKT ***************/
+/************* GRUNDLÆGGEENDE WEB *************/
+
+.styletile_web img,
+.moodboard_web img,
+.favicon_web img {
+  padding-inline: 2rem;
+}
+.moodboard_web1 img,
+.splash_web img,
+.collage_web img {
+  padding-inline: 2rem;
+  padding-top: 2rem;
+}
+/************* GRUNDLÆGGEENDE UX *************/
+
+/************* GRUNDLÆGGEENDE ANIMATION *************/
+
+.animation_text h1 {
+  padding-inline: 2rem;
+}
+
+/************* GRUNDLÆGGEENDE INDHOLD *************/
+
+.indhold_splash,
+.indhold_moodboard,
+.indhold_styletile_gammel,
+.indhold_styletile_ny,
+.indhold_bert,
+.indhold_video {
+  padding-inline: 2rem;
+}
+
+@media (min-width: 800px) {
+  /************ FONTE **************/
+
+  h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 1rem;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  h5 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  p {
+    text-align: left;
+    padding-inline: 2rem;
+    padding-block: 2rem 2rem;
+    line-height: 2;
+    font-size: var(--space-sm);
+  }
+
+  /************* MENU OG FOOTER ***************/
+
+  header h1 {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  h1 a {
+    font-size: 2.3rem;
+  }
+
+  .links {
+    display: flex;
+    padding-inline: 0;
+    padding-top: 0rem;
+    padding-left: 2rem;
+    justify-content: end;
+  }
+
+  .links a {
+    color: var(--heading);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--paragraph);
+    padding-inline: 2rem;
+    padding-top: 0rem;
+  }
+
+  .footer_info {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    padding-block: 1rem;
+  }
+
+  .footer_info p {
+    padding-inline: 2rem;
+    padding-block: 0rem;
+  }
+
+  /************* LINKS **************/
+
+  .cv_link,
+  .projekter_link,
+  .om_mig_link,
+  .kontakt_link,
+  .web_projekt,
+  .ux_projekt,
+  .animation_projekt,
+  .indhold_projekt,
+  .indhold_pilot,
+  .undersider_link {
+    text-align: center;
+    list-style: none;
+  }
+
+  .cv_link a,
+  .projekter_link a,
+  .om_mig_link a,
+  .kontakt_link a,
+  .web_projekt a,
+  .ux_projekt a,
+  .animation_projekt a,
+  .indhold_projekt a,
+  .indhold_pilot a,
+  .undersider_link a {
+    font-family: var(--paragraph);
+    text-decoration: none;
+    background-color: var(--accent);
+    border-radius: 6px 20px 6px 6px;
+    color: var(--secondary);
+    padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .links_forside {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .projekter_link,
+  .om_mig_link,
+  .kontakt_link {
+    margin-block: 4rem;
+    padding-inline: 0.2rem;
+  }
+
+  .undersider_link {
+    padding-block: 2rem 3rem;
+    padding-left: 0rem;
+  }
+
+  /************* FORSIDE *************/
+
+  .hero {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr auto auto 1fr;
+    margin-inline: 2rem;
+  }
+
+  .hero h1 {
+    grid-area: 2/1;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  .hero video {
+    grid-area: 1/1;
+    grid-row: 1/5;
+  }
+
+  .links_forside {
+    grid-area: 3/1;
+    padding-inline: 0rem;
+    margin-inline: 18rem;
+  }
+
+  .links_forside a {
+    background-color: rgba(255, 148, 77, 0.5);
+  }
+
+  .forside_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    padding-bottom: 0rem;
+  }
+
+  .forside_portraet {
+    padding-top: 2rem;
+    /* max-width: 56.25vw;
+      height: 56.25vw; */
+    margin-bottom: 0rem;
+  }
+
+  .velkommen {
+    padding-bottom: 0rem;
+  }
+
+  /************* PROJEKTER *************/
+
+  .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 8rem;
+  }
+
+  .projekter_text {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column: 2/3;
+    margin-bottom: 2rem;
+  }
+
+  .projekter_p {
+    grid-column: 2/3;
+  }
+
+  .section_wrapper h4 {
+    font-size: 1rem;
+  }
+
+  /************* OM MIG *************/
+
+  .om_mig_overst_sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .om_mig_splash {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    padding-inline: 2rem;
+    text-align: center;
+  }
+
+  .om_mig_info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .om_mig_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .om_mig_info,
+  .hvem_er_jeg,
+  .cv_link,
+  .lille_info,
+  .section_wrapper1,
+  .section_wrapper2 {
+    grid-column: 2/3;
+  }
+
+  .om_mig_info {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-inline: 10rem;
+  }
+
+  .om_mig_info p {
+    text-align: center;
+    padding-inline: 2rem;
+    line-height: 2;
+    font-size: var(--space-xs);
+  }
+
+  .om_mig_info h4 {
+    font-size: 1.1rem;
+  }
+
+  .om_mig_info h3 {
+    font-size: 1.2rem;
+  }
+
+  /************* KONTAKT **************/
+
+  .kontakt_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .kontakt_tekst {
+    grid-column: 2/3;
+  }
+
+  .kontakt_formular {
+    grid-column: 2/3;
+  }
+
+  /************* GRUNDLÆGGEENDE WEB *************/
+
+  .web_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .web_intro,
+  .web_projekt,
+  .web_tekst {
+    grid-column: 2/3;
+  }
+
+  /************* GRUNDLÆGGEENDE UX *************/
+
+  .web_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .web_intro,
+  .web_projekt,
+  .web_tekst {
+    grid-column: 2/3;
+  }
+
+  /************* GRUNDLÆGGEENDE ANIMATION *************/
+
+  .web_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .web_intro,
+  .web_projekt,
+  .web_tekst {
+    grid-column: 2/3;
+  }
+
+  /************* GRUNDLÆGGEENDE INDHOLD *************/
+
+  .indhold_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .indhold_intro,
+  .indhold_pilot_text,
+  .indhold_redesign_text {
+    grid-column: 2/3;
+  }
+  .indhold_video {
+    margin-inline: 4rem;
+    margin-block: 4rem;
+  }
+}
