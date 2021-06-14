@@ -89,7 +89,8 @@ h1 a {
 .animation_projekt,
 .indhold_projekt,
 .indhold_pilot,
-.undersider_link {
+.undersider_link,
+.indhold_dokumentation {
   text-align: center;
   list-style: none;
 }
@@ -103,7 +104,8 @@ h1 a {
 .animation_projekt a,
 .indhold_projekt a,
 .indhold_pilot a,
-.undersider_link a {
+.undersider_link a,
+.indhold_dokumentation a {
   font-family: var(--paragraph);
   text-decoration: none;
   background-color: var(--accent);
@@ -384,6 +386,15 @@ p {
   padding-inline: 2rem;
 }
 
+.indhold_splash,
+.indhold_styletile_gammel {
+  padding-block: 2rem;
+}
+
+.indhold_test_text {
+  padding-top: 0rem;
+}
+
 @media (min-width: 800px) {
   /************ FONTE **************/
 
@@ -474,7 +485,8 @@ p {
   .animation_projekt,
   .indhold_projekt,
   .indhold_pilot,
-  .undersider_link {
+  .undersider_link,
+  .indhold_dokumentation {
     text-align: center;
     list-style: none;
   }
@@ -488,7 +500,8 @@ p {
   .animation_projekt a,
   .indhold_projekt a,
   .indhold_pilot a,
-  .undersider_link a {
+  .undersider_link a,
+  .indhold_dokumentation a {
     font-family: var(--paragraph);
     text-decoration: none;
     background-color: var(--accent);
@@ -708,8 +721,8 @@ p {
   .indhold_redesign_text {
     grid-column: 2/3;
   }
-  .indhold_video {
-    margin-inline: 4rem;
-    margin-block: 4rem;
-  }
+  /* .indhold_video {
+    margin-inline: 2rem;
+    margin-block: 2rem;
+  } */
 }
