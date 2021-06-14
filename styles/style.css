@@ -376,7 +376,11 @@ p {
 /************* GRUNDLÆGGEENDE UX *************/
 
 .ux_moodboard {
-  padding-block: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ux_sidste_paragraf {
+  padding-top: 0rem;
 }
 
 /************* GRUNDLÆGGEENDE ANIMATION *************/
