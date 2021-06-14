@@ -56,6 +56,14 @@ html {
   font-family: var(--paragraph);
 }
 
+.links a:hover {
+  color: var(--accent);
+}
+
+h1 a:hover {
+  color: var(--accent);
+}
+
 h1 a {
   font-size: 1.5rem;
   font-family: var(--h1Text);
@@ -112,6 +120,21 @@ h1 a {
   padding: 0.7rem 1.3rem 0.7rem 1.3rem;
   margin-top: 0.5rem;
   font-size: 0.8rem;
+}
+
+.cv_link a:hover,
+.projekter_link a:hover,
+.om_mig_link a:hover,
+.kontakt_link a:hover,
+.web_projekt a:hover,
+.ux_prototype a:hover,
+.ux_pitch a:hover,
+.animation_projekt a:hover,
+.indhold_projekt a:hover,
+.indhold_pilot a:hover,
+.undersider_link a:hover,
+.indhold_dokumentation a:hover {
+  color: black;
 }
 
 .links_forside {
@@ -282,6 +305,10 @@ p {
 
 .section_wrapper img {
   padding-inline: 2rem;
+}
+
+.projekt_text_hover {
+  display: none;
 }
 
 /************* OM MIG ****************/
@@ -574,6 +601,10 @@ p {
 
   .section_wrapper h4 {
     font-size: 1rem;
+  }
+
+  .projekter_border:hover {
+    opacity: 0.2;
   }
 
   /************* OM MIG *************/
