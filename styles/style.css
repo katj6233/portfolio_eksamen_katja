@@ -371,8 +371,17 @@ p {
 
 /************* GRUNDLÆGGEENDE ANIMATION *************/
 
-.animation_text h1 {
+.amination_spilskaerm,
+.animation_spilscene {
   padding-inline: 2rem;
+}
+
+.animation_intro h1 {
+  padding-inline: 2rem;
+}
+
+.animation_paragraf_text {
+  padding-bottom: 0rem;
 }
 
 /************* GRUNDLÆGGEENDE INDHOLD *************/
@@ -682,7 +691,7 @@ p {
   }
   .web_intro,
   .web_projekt,
-  .web_tekst {
+  .web_text {
     grid-column: 2/3;
   }
 
@@ -700,13 +709,13 @@ p {
 
   /************* GRUNDLÆGGEENDE ANIMATION *************/
 
-  .web_grid {
+  .animation_grid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
   }
-  .web_intro,
-  .web_projekt,
-  .web_tekst {
+  .animation_intro,
+  .animation_projekt,
+  .animation_text {
     grid-column: 2/3;
   }
 
