@@ -36,10 +36,6 @@ html {
   background-color: var(--primary);
 }
 
-/* header {
-    padding-top: 1rem;
-  } */
-
 /********** MENU  ************/
 
 .links {
@@ -85,7 +81,8 @@ h1 a {
 .om_mig_link,
 .kontakt_link,
 .web_projekt,
-.ux_projekt,
+.ux_prototype,
+.ux_pitch,
 .animation_projekt,
 .indhold_projekt,
 .indhold_pilot,
@@ -100,7 +97,8 @@ h1 a {
 .om_mig_link a,
 .kontakt_link a,
 .web_projekt a,
-.ux_projekt a,
+.ux_prototype a,
+.ux_pitch a,
 .animation_projekt a,
 .indhold_projekt a,
 .indhold_pilot a,
@@ -135,7 +133,11 @@ h1 a {
 
 /************* KONTAKTFORMULAR **************/
 
-.kontakt_formular {
+.kontakt_formular,
+.forside_grid,
+.projekter_border,
+.om_mig_uddannelse,
+.om_mig_erhverserfaring {
   background-color: var(--secondary);
   margin-inline: 2rem;
   margin-bottom: 2rem;
@@ -255,22 +257,6 @@ p {
   grid-row: 1/5;
 }
 
-/* .forside_splash {
-    display: grid;
-  }
-  
-  .forside_splash h1 {
-    grid-area: 1/1;
-  } */
-
-.forside_grid {
-  background-color: var(--secondary);
-  margin-inline: 2rem;
-  margin-bottom: 2rem;
-  border-inline: 0.3rem solid var(--accent);
-  border-block: 0.3rem solid var(--accent);
-}
-
 .forside_grid h2 {
   margin-top: 2rem;
 }
@@ -296,14 +282,6 @@ p {
 
 .section_wrapper img {
   padding-inline: 2rem;
-}
-
-.projekter_border {
-  background-color: var(--secondary);
-  margin-inline: 2rem;
-  margin-bottom: 2rem;
-  border-inline: 0.3rem solid var(--accent);
-  border-block: 0.3rem solid var(--accent);
 }
 
 /************* OM MIG ****************/
@@ -333,27 +311,17 @@ p {
   padding-top: 2rem;
 }
 
-.section_wrapper1,
-.section_wrapper2 {
-  background-color: var(--secondary);
-  margin-inline: 2rem;
-  border-inline: 0.3rem solid var(--accent);
-  border-block: 0.3rem solid var(--accent);
-  margin-bottom: 2rem;
-}
-
-.section_wrapper1 h3,
-.section_wrapper2 h3 {
+.om_mig_uddannelse h3,
+.om_mig_erhverserfaring h3 {
   padding-block: 2rem;
 }
 
-.section_wrapper1 p,
-.section_wrapper2 p {
+.om_mig_uddannelse p,
+.om_mig_erhverserfaring p {
   padding-inline: 2rem;
   text-align: center;
 }
 
-/************* KONTAKT ***************/
 /************* GRUNDLÆGGEENDE WEB *************/
 
 .styletile_web img,
@@ -490,7 +458,8 @@ p {
   .om_mig_link,
   .kontakt_link,
   .web_projekt,
-  .ux_projekt,
+  .ux_prototype,
+  .ux_pitch,
   .animation_projekt,
   .indhold_projekt,
   .indhold_pilot,
@@ -505,7 +474,8 @@ p {
   .om_mig_link a,
   .kontakt_link a,
   .web_projekt a,
-  .ux_projekt a,
+  .ux_prototype a,
+  .ux_pitch a,
   .animation_projekt a,
   .indhold_projekt a,
   .indhold_pilot a,
@@ -598,15 +568,8 @@ p {
     padding-inline: 8rem;
   }
 
-  .projekter_text {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-column: 2/3;
+  .projekter_intro {
     margin-bottom: 2rem;
-  }
-
-  .projekter_p {
-    grid-column: 2/3;
   }
 
   .section_wrapper h4 {
@@ -634,20 +597,6 @@ p {
     grid-row: 2/3;
   }
 
-  .om_mig_grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-
-  .om_mig_info,
-  .hvem_er_jeg,
-  .cv_link,
-  .lille_info,
-  .section_wrapper1,
-  .section_wrapper2 {
-    grid-column: 2/3;
-  }
-
   .om_mig_info {
     background-color: rgba(255, 255, 255, 0.4);
     margin-inline: 10rem;
@@ -668,70 +617,37 @@ p {
     font-size: 1.2rem;
   }
 
-  /************* KONTAKT **************/
+  /************* OM MIG, KONTAKT, GRUNDLÆGGEENDE WEB, UX, ANIMATION, INDHOLD GRID *************/
 
-  .kontakt_grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-
-  .kontakt_tekst {
-    grid-column: 2/3;
-  }
-
-  .kontakt_formular {
-    grid-column: 2/3;
-  }
-
-  /************* GRUNDLÆGGEENDE WEB *************/
-
-  .web_grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-  .web_intro,
-  .web_projekt,
-  .web_text {
-    grid-column: 2/3;
-  }
-
-  /************* GRUNDLÆGGEENDE UX *************/
-
-  .web_grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-  .web_intro,
-  .web_projekt,
-  .web_tekst {
-    grid-column: 2/3;
-  }
-
-  /************* GRUNDLÆGGEENDE ANIMATION *************/
-
-  .animation_grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-  .animation_intro,
-  .animation_projekt,
-  .animation_text {
-    grid-column: 2/3;
-  }
-
-  /************* GRUNDLÆGGEENDE INDHOLD *************/
-
+  .projekter_intro,
+  .om_mig_grid,
+  .kontakt_grid,
+  .web_grid,
+  .ux_grid,
+  .animation_grid,
   .indhold_grid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
   }
+
+  .projekter_text,
+  .om_mig_info,
+  .hvem_er_jeg,
+  .cv_link,
+  .lille_info,
+  .om_mig_uddannelse,
+  .om_mig_erhverserfaring,
+  .kontakt_formular,
+  .kontakt_tekst,
+  .web_intro,
+  .web_text,
+  .ux_intro,
+  .ux_text,
+  .animation_intro,
+  .animation_text,
   .indhold_intro,
   .indhold_pilot_text,
   .indhold_redesign_text {
     grid-column: 2/3;
   }
-  /* .indhold_video {
-    margin-inline: 2rem;
-    margin-block: 2rem;
-  } */
 }
