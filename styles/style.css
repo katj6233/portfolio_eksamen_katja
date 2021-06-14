@@ -605,6 +605,7 @@ p {
 
   .projekter_border:hover {
     opacity: 0.2;
+    color: black;
   }
 
   /************* OM MIG *************/
