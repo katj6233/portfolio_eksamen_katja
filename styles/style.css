@@ -351,25 +351,35 @@ p {
 
 /************* GRUNDLÆGGEENDE WEB *************/
 
-.styletile_web img,
-.moodboard_web img,
-.favicon_web img {
+.styletile_web,
+.moodboard_web,
+.favicon_web,
+.ux_front,
+.ux_moodboard,
+.ux_billedecollage,
+.amination_spilskaerm,
+.animation_spilscene,
+.indhold_splash,
+.indhold_moodboard,
+.indhold_styletile_gammel,
+.indhold_styletile_ny,
+.indhold_bert,
+.indhold_video {
   padding-inline: 2rem;
 }
-.moodboard_web1 img,
-.splash_web img,
-.collage_web img {
+.moodboard_web1,
+.splash_web,
+.collage_web {
   padding-inline: 2rem;
   padding-top: 2rem;
 }
 /************* GRUNDLÆGGEENDE UX *************/
 
-/************* GRUNDLÆGGEENDE ANIMATION *************/
-
-.amination_spilskaerm,
-.animation_spilscene {
-  padding-inline: 2rem;
+.ux_moodboard {
+  padding-block: 2rem;
 }
+
+/************* GRUNDLÆGGEENDE ANIMATION *************/
 
 .animation_intro h1 {
   padding-inline: 2rem;
@@ -380,15 +390,6 @@ p {
 }
 
 /************* GRUNDLÆGGEENDE INDHOLD *************/
-
-.indhold_splash,
-.indhold_moodboard,
-.indhold_styletile_gammel,
-.indhold_styletile_ny,
-.indhold_bert,
-.indhold_video {
-  padding-inline: 2rem;
-}
 
 .indhold_splash,
 .indhold_styletile_gammel {
