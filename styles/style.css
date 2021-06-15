@@ -25,15 +25,66 @@ html {
   --h5Text: "Mukta", sans-serif;
   --paragraph: "Lato", sans-serif;
 
-  --space-xxs: 0.25rem;
-  --space-xs: 0.8rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-xxl: 6rem;
+  --space-xxs: 0.8rem;
+  --space-xs: 1rem;
+  --space-sm: 1.2rem;
+  --space-md: 1.4rem;
+  --space-lg: 1.5rem;
+  --space-xl: 1.7rem;
+  --space-xxl: 2.3rem;
+  --space-xxxl: 5rem;
 
   background-color: var(--primary);
+}
+
+/************ FONTE **************/
+
+h1 {
+  font-family: var(--h1Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: var(--space-xl);
+  padding-top: 1rem;
+}
+
+h2 {
+  font-family: var(--h2Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: var(--space-md);
+}
+
+h3 {
+  font-family: var(--h3Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: var(--space-sm);
+}
+
+h4 {
+  font-family: var(--h4Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: var(--space-xs);
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+}
+
+h5 {
+  font-family: var(--h5Text);
+  color: var(--heading);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+p {
+  font-family: var(--paragraph);
+  color: var(--heading);
+  text-align: left;
+  padding-inline: 2rem;
+  padding-block: 2rem 2rem;
+  line-height: 2;
+  font-size: var(--space-xxs);
 }
 
 /********** MENU  ************/
@@ -52,7 +103,7 @@ html {
 .links a {
   color: var(--heading);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: var(--space-xxs);
   font-family: var(--paragraph);
 }
 
@@ -65,7 +116,7 @@ h1 a:hover {
 }
 
 h1 a {
-  font-size: 1.5rem;
+  font-size: var(--space-lg);
   font-family: var(--h1Text);
   text-decoration: none;
   color: var(--heading);
@@ -121,7 +172,7 @@ h1 a {
   color: var(--secondary);
   padding: 0.7rem 1.3rem 0.7rem 1.3rem;
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: var(--space-xxs);
 }
 
 .cv_link a:hover,
@@ -173,7 +224,7 @@ h1 a {
 
 form label {
   font-family: var(--paragraph);
-  font-size: 0.8rem;
+  font-size: var(--space-xxs);
   color: var(--heading);
   margin-block: 0.5rem;
 }
@@ -211,77 +262,7 @@ button a {
   color: #fff;
 }
 
-/************ FONTE **************/
-
-h1 {
-  font-family: var(--h1Text);
-  color: var(--heading);
-  text-align: center;
-  font-size: 1.7rem;
-  padding-top: 1rem;
-}
-
-h2 {
-  font-family: var(--h2Text);
-  color: var(--heading);
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-h3 {
-  font-family: var(--h3Text);
-  color: var(--heading);
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-h4 {
-  font-family: var(--h4Text);
-  color: var(--heading);
-  text-align: center;
-  font-size: 1rem;
-  padding-inline: 1rem;
-  padding-bottom: 1rem;
-}
-
-h5 {
-  font-family: var(--h5Text);
-  color: var(--heading);
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-p {
-  font-family: var(--paragraph);
-  color: var(--heading);
-  text-align: left;
-  padding-inline: 2rem;
-  padding-block: 2rem 2rem;
-  line-height: 2;
-  font-size: var(--space-xs);
-}
-
 /************* FORSIDE *************/
-
-.hero {
-  display: grid;
-  align-items: center;
-  grid-template-rows: 1fr auto auto 1fr;
-  /* margin-inline: 2rem; */
-}
-
-.hero h1 {
-  grid-area: 2/1;
-  text-align: center;
-  color: var(--secondary);
-  font-size: 1.7rem;
-  letter-spacing: 1rem;
-}
-
-.hero video {
-  grid-area: 1/1;
-  grid-row: 1/5;
-}
 
 .forside_grid h2 {
   margin-top: 2rem;
@@ -297,7 +278,7 @@ p {
 .section_wrapper a {
   font-family: var(--h3Text);
   color: var(--heading);
-  font-size: 1.2rem;
+  font-size: var(--space-sm);
   text-decoration: none;
 }
 
@@ -309,6 +290,7 @@ p {
 .section_wrapper img {
   padding-inline: 2rem;
 }
+
 /************* OM MIG ****************/
 
 .om_mig_info {
@@ -406,39 +388,28 @@ p {
   /************ FONTE **************/
 
   h1 {
-    text-align: center;
-    font-size: 1.7rem;
+    font-size: var(--space-xl);
     padding-top: 1rem;
   }
 
   h2 {
-    text-align: center;
-    font-size: 1.4rem;
+    font-size: var(--space-lg);
   }
 
   h3 {
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--space-md);
   }
 
   h4 {
-    text-align: center;
-    font-size: 1rem;
-    padding-inline: 1rem;
-    padding-bottom: 1rem;
+    font-size: var(--space-sm);
   }
 
   h5 {
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   p {
-    text-align: left;
-    padding-inline: 2rem;
-    padding-block: 2rem 2rem;
-    line-height: 2;
-    font-size: var(--space-sm);
+    font-size: var(--space-xs);
   }
 
   /************* MENU OG FOOTER ***************/
@@ -449,22 +420,17 @@ p {
   }
 
   h1 a {
-    font-size: 2.3rem;
+    font-size: var(--space-xxl);
   }
 
   .links {
-    display: flex;
-    padding-inline: 0;
     padding-top: 0rem;
     padding-left: 2rem;
     justify-content: end;
   }
 
   .links a {
-    color: var(--heading);
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: var(--paragraph);
+    font-size: var(--space-xs);
     padding-inline: 2rem;
     padding-top: 0rem;
   }
@@ -472,33 +438,10 @@ p {
   .footer_info {
     display: flex;
     justify-content: center;
-    background-color: var(--primary);
     padding-block: 1rem;
   }
 
-  .footer_info p {
-    padding-inline: 2rem;
-    padding-block: 0rem;
-  }
-
   /************* LINKS **************/
-
-  .cv_link,
-  .projekter_link,
-  .om_mig_link,
-  .kontakt_link,
-  .web_projekt,
-  .ux_prototype,
-  .ux_pitch,
-  .ux_dokumentation,
-  .animation_projekt,
-  .indhold_projekt,
-  .indhold_pilot,
-  .undersider_link,
-  .indhold_dokumentation {
-    text-align: center;
-    list-style: none;
-  }
 
   .cv_link a,
   .projekter_link a,
@@ -513,33 +456,8 @@ p {
   .indhold_pilot a,
   .undersider_link a,
   .indhold_dokumentation a {
-    font-family: var(--paragraph);
-    text-decoration: none;
-    background-color: var(--accent);
-    border-radius: 6px 20px 6px 6px;
-    color: var(--secondary);
-    padding: 0.7rem 1.3rem 0.7rem 1.3rem;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: var(--space-xs);
   }
-
-  .links_forside {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .projekter_link,
-  .om_mig_link,
-  .kontakt_link {
-    margin-block: 4rem;
-    padding-inline: 0.2rem;
-  }
-
-  .undersider_link {
-    padding-block: 2rem 3rem;
-    padding-left: 0rem;
-  }
-
   /************* FORSIDE *************/
 
   .hero {
@@ -553,7 +471,7 @@ p {
     grid-area: 2/1;
     text-align: center;
     color: var(--secondary);
-    font-size: 5rem;
+    font-size: var(--space-xxxl);
     letter-spacing: 1rem;
   }
 
@@ -605,7 +523,7 @@ p {
   }
 
   .section_wrapper h4 {
-    font-size: 1rem;
+    font-size: var(--space-xs);
   }
 
   /************* OM MIG *************/
@@ -635,7 +553,6 @@ p {
   }
 
   .om_mig_info p {
-    text-align: center;
     padding-inline: 2rem;
     line-height: 2;
     font-size: var(--space-xs);
@@ -646,7 +563,7 @@ p {
   }
 
   .om_mig_info h3 {
-    font-size: 1.2rem;
+    font-size: var(--space-sm);
   }
 
   /************* OM MIG, KONTAKT, GRUNDLÆGGEENDE WEB, UX, ANIMATION, INDHOLD GRID *************/
