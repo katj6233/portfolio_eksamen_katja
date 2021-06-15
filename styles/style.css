@@ -344,7 +344,8 @@ button a {
 .indhold_styletile_gammel,
 .indhold_styletile_ny,
 .indhold_bert,
-.indhold_video {
+.indhold_video,
+.animation_intro h1 {
   padding-inline: 2rem;
 }
 .moodboard_web1,
@@ -364,10 +365,6 @@ button a {
 }
 
 /************* GRUNDLÆGGEENDE ANIMATION *************/
-
-.animation_intro h1 {
-  padding-inline: 2rem;
-}
 
 .animation_paragraf_text {
   padding-bottom: 0rem;
@@ -554,7 +551,6 @@ button a {
 
   .om_mig_info p {
     padding-inline: 2rem;
-    line-height: 2;
     font-size: var(--space-xs);
   }
 
