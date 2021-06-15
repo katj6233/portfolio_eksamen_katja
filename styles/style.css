@@ -91,6 +91,7 @@ h1 a {
 .web_projekt,
 .ux_prototype,
 .ux_pitch,
+.ux_dokumentation,
 .animation_projekt,
 .indhold_projekt,
 .indhold_pilot,
@@ -107,6 +108,7 @@ h1 a {
 .web_projekt a,
 .ux_prototype a,
 .ux_pitch a,
+.ux_dokumentation a,
 .animation_projekt a,
 .indhold_projekt a,
 .indhold_pilot a,
@@ -129,6 +131,7 @@ h1 a {
 .web_projekt a:hover,
 .ux_prototype a:hover,
 .ux_pitch a:hover,
+.ux_dokumentation a:hover,
 .animation_projekt a:hover,
 .indhold_projekt a:hover,
 .indhold_pilot a:hover,
@@ -380,7 +383,7 @@ p {
 }
 
 .ux_sidste_paragraf {
-  padding-top: 0rem;
+  padding-top: 2rem;
 }
 
 /************* GRUNDLÆGGEENDE ANIMATION *************/
@@ -492,6 +495,7 @@ p {
   .web_projekt,
   .ux_prototype,
   .ux_pitch,
+  .ux_dokumentation,
   .animation_projekt,
   .indhold_projekt,
   .indhold_pilot,
@@ -508,6 +512,7 @@ p {
   .web_projekt a,
   .ux_prototype a,
   .ux_pitch a,
+  .ux_dokumentation a,
   .animation_projekt a,
   .indhold_projekt a,
   .indhold_pilot a,
