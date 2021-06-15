@@ -309,11 +309,6 @@ p {
 .section_wrapper img {
   padding-inline: 2rem;
 }
-
-.projekt_text_hover {
-  display: none;
-}
-
 /************* OM MIG ****************/
 
 .om_mig_info {
@@ -611,11 +606,6 @@ p {
 
   .section_wrapper h4 {
     font-size: 1rem;
-  }
-
-  .projekter_border:hover {
-    opacity: 0.2;
-    color: black;
   }
 
   /************* OM MIG *************/
