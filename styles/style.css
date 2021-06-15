@@ -222,6 +222,8 @@ h1 a {
   border-block: 0.3rem solid var(--accent);
 }
 
+/**** Taget fra Redesign/Dannie *******/
+
 form label {
   font-family: var(--paragraph);
   font-size: var(--space-xxs);
